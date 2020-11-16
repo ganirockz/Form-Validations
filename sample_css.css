@@ -96,4 +96,15 @@
             .sideBarLeftItem{order: 2;}
             .mainContentItem{order:1;}
             .sideBarRightItem{order:3;}
+
+            @media only screen and (max-width:360px){
+                h1{
+                    font-size: 40px;
+                    text-align: center;
+                }
+                label{
+                    width: 40%;
+                    font-size: 14px;
+                }
+            }
             
