@@ -54,6 +54,16 @@
     </div>
     </form>
     <script>
+        const text = document.querySelector('#text');
+        const text_error = document.querySelector('.text-error');
+        text.addEventListener('input',function(){
+            let textRegex = RegExp("[A-Z]{1}[a-z]{2,}");
+            if(textRegex.test(text.value)){
+                text_error.textContent = "";
+            }else{
+                text_error.textContent = "Invalid First Name";
+            }
+        });
         const salary = document.querySelector('#salary');
         const output = document.querySelector('.salary-output');
         output.textContent = salary.value;
