@@ -1,0 +1,99 @@
+
+            * {
+                box-sizing: border-box; 
+            }
+            body{
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+                margin: 0px auto;
+                align-content: center;
+                width: 100%;
+                max-width: 600px;
+                padding: 2em;
+            }
+
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 20px;
+            }
+
+            form{
+                margin-top: 50px;
+            }
+
+            div{
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            label,input,button{
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            input{
+                flex: auto;
+            }
+
+            button{
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            error-output{
+                font-size: 12px;
+                font-style: italic;
+                color: red;
+            }
+
+            label{
+                text-align: right;
+                width: 30%;
+                margin-right: 2%;
+            }
+
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            header,footer{
+                background: yellowgreen;
+                height: 20vh;
+            }
+
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .mainContentItem{
+                text-align: left;
+            }
+
+            article{
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .sideBarLeftItem{ background:beige;}
+            .sideBarRightItem{ background:#D7E8D4;}
+
+            .sideBarItem{flex: 1 0 0; border: 0px solid green;}
+            .mainContentItem{flex: 3 0px;}
+            .sideBarLeftItem{order: 2;}
+            .mainContentItem{order:1;}
+            .sideBarRightItem{order:3;}
+            
